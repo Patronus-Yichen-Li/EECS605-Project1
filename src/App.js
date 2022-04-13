@@ -220,18 +220,16 @@ function App() {
         </p>
         <img src={relationData} height="200"></img>
       </div>
-    </div>
-    <div>
-          <footer id="footer" class="wrapper style1-alt">
-      <div class="inner">
-        <p align="">
-          If you want to know how it works, please use this link to see my technical report about this application
-        </p>
-        <a herf="https://issuu.com/liyichen_umich/docs/technical_report">
-          Technical report
-        </a>
-      </div>
-    </footer>
+      <footer id="footer" class="wrapper style1-alt">
+        <div class="inner">
+          <p align="">
+            If you want to know how it works, please use this link to see my technical report about this application
+          </p>
+          <a herf="https://issuu.com/liyichen_umich/docs/technical_report">
+            Technical report
+          </a>
+        </div>
+      </footer>
     </div>
   );
 }
