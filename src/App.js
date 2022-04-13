@@ -181,11 +181,11 @@ function App() {
         <h2>Name:Yichen Li, email:liyichen@umich.edu</h2>
         <h1 align="left">Input</h1>
         <p align="left">
-          Please input a .csv file with content as following:<br />
+          Please upload a .csv file with content as following:<br />
           "attribute": open, low, high, close, volume<br />
           "target": AMD, AMZN, GOOG, IBM, IT, JPM, NFLX, WAT, WM, ZION<br />
           <br/>
-          Or, please see the demo sample files by clicking "Upload file" to see prepared sample files.
+          Or, please see the demo sample files by browsing the dropdown menu to see prepared sample files.
           And the content in the files are also shown in the filenames accordingly.<br />
         </p>
         <label htmlFor="demo-dropdown">Demo: </label>
@@ -219,6 +219,15 @@ function App() {
           Here by showing the slice of the history (training) data and 120 days prediciton result.<br /> 
         </p>
         <img src={relationData}></img>
+      </div>
+      <div className="Link">
+        <p>
+          If you want to know how it works, please use this link to see my technical report about this application
+        </p>
+        <li>
+          technical report:
+          <a herf="https://issuu.com/liyichen_umich/docs/technical_report">https://issuu.com/liyichen_umich/docs/technical_report</a>
+        </li>
       </div>
     </div>
   );
