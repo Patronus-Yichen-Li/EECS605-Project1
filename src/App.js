@@ -176,14 +176,17 @@ function App() {
 
   return (
     <div className="App">
-      <h1 align="left">Stock Prediction</h1>
-      <h2 align="left">Name:Yichen Li, email:liyichen@umich.edu</h2>
       <div className="Input">
-        <h1>Input</h1>
-        <p>
+        <h1>Stock Prediction</h1>
+        <h2>Name:Yichen Li, email:liyichen@umich.edu</h2>
+        <h1 align="left">Input</h1>
+        <p align="left">
           Please input a .csv file with content as following:<br />
           "attribute": open, low, high, close, volume<br />
           "target": AMD, AMZN, GOOG, IBM, IT, JPM, NFLX, WAT, WM, ZION<br />
+          <br/>
+          Or, please see the demo sample files by clicking "Upload file" to see prepared sample files.
+          And the content in the files are also shown in the filenames accordingly.<br />
         </p>
         <label htmlFor="demo-dropdown">Demo: </label>
         <select name="Select Image" id="demo-dropdown" value={selectedDropdownFile} onChange={handleDropdown}>
@@ -198,15 +201,15 @@ function App() {
         <img src={inputImage} alt="" />
       </div>
       <div className="Output">
-        <h1>Results</h1>
-        <h2>Relation</h2>
-        <p>
+        <h1 align="left">Results</h1>
+        <h2 align="left">Relation</h2>
+        <p align="left">
           This chart reveals the relationship between stocks mentioned in "targets" above, with the same sort<br />
           Having the default (best) history investigation length of 120 trading days.
         </p>
         <img src={predictionData}></img>
-        <h2>Prediction</h2>
-        <p>
+        <h2 align="left">Prediction</h2>
+        <p align="left">
           This chart reveals the prediciton based on LSTM and LSTM with GreyRelationship calibration.<br />
           The prediciton part is set automatically 120 trading days after the querying day (today), 
           for the application currently using prediciton result from previous LSTM and calibration,
