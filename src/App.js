@@ -207,7 +207,7 @@ function App() {
           This chart reveals the relationship between stocks mentioned in "targets" above, with the same sort<br />
           Having the default (best) history investigation length of 120 trading days.
         </p>
-        <img src={predictionData}></img>
+        <img src={predictionData} height="200"></img>
         <h2 align="left">Prediction</h2>
         <p align="left">
           This chart reveals the prediciton based on LSTM and LSTM with GreyRelationship calibration.<br />
@@ -218,16 +218,20 @@ function App() {
           is acceptable.<br />
           Here by showing the slice of the history (training) data and 120 days prediciton result.<br /> 
         </p>
-        <img src={relationData}></img>
-
-        <p>
-            If you want to know how it works, please use this link to see my technical report about this application
-        </p>
-        <li>
-            technical report:
-            <a herf="https://issuu.com/liyichen_umich/docs/technical_report">https://issuu.com/liyichen_umich/docs/technical_report</a>
-        </li>
+        <img src={relationData} height="200"></img>
       </div>
+    </div>
+    <div>
+          <footer id="footer" class="wrapper style1-alt">
+      <div class="inner">
+        <p align="">
+          If you want to know how it works, please use this link to see my technical report about this application
+        </p>
+        <a herf="https://issuu.com/liyichen_umich/docs/technical_report">
+          Technical report
+        </a>
+      </div>
+    </footer>
     </div>
   );
 }
