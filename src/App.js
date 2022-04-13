@@ -220,15 +220,19 @@ function App() {
         </p>
         <img src={relationData}></img>
       </div>
-      <div className="Link">
-        <p>
-          If you want to know how it works, please use this link to see my technical report about this application
-        </p>
-        <li>
-          technical report:
-          <a herf="https://issuu.com/liyichen_umich/docs/technical_report">https://issuu.com/liyichen_umich/docs/technical_report</a>
-        </li>
-      </div>
+      <footer>
+        <div className="Link">
+          <p>
+            If you want to know how it works, please use this link to see my technical report about this application
+          </p>
+          <li>
+            technical report:
+            <a herf="https://issuu.com/liyichen_umich/docs/technical_report">https://issuu.com/liyichen_umich/docs/technical_report</a>
+          </li>
+        </div>
+      </footer>
+
+
     </div>
   );
 }
