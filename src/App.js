@@ -219,20 +219,15 @@ function App() {
           Here by showing the slice of the history (training) data and 120 days prediciton result.<br /> 
         </p>
         <img src={relationData}></img>
-      </div>
-      <footer>
-        <div className="Link">
-          <p>
+
+        <p>
             If you want to know how it works, please use this link to see my technical report about this application
-          </p>
-          <li>
+        </p>
+        <li>
             technical report:
             <a herf="https://issuu.com/liyichen_umich/docs/technical_report">https://issuu.com/liyichen_umich/docs/technical_report</a>
-          </li>
-        </div>
-      </footer>
-
-
+        </li>
+      </div>
     </div>
   );
 }
